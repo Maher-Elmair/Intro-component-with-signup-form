@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/**
+*
+* Testing
+*
+**/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: #ffffff;
+  border-left: 0 solid #ffffff;
+  border-right: 0 solid #ffffff;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d54a3;
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #5d54a3;
+}
+
+::selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #5d54a3;
+}
+
+/* end variables */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*small*/
+  /* tablet */
+  /* Medium */
+  /* desktop  */
+}
+@media (min-width: 577px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*! start variables*/
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "font-family: 'Poppins', sans-serif;", sans-serif;
+}
+
+:root {
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: #ff7978;
+}
+
+/*! end Global Rules*/
+/*! start code */
+.main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*! start Attribution */
+  /*! end Attribution */
+}
+.main .container .app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.main .container .app .text {
+  color: #ffffff;
+  max-width: 50%;
+}
+.main .container .app .text p:first-child {
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 700;
+}
+.main .container .app .text p:last-child {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .main .container .app .text {
+    text-align: center;
+  }
+  .main .container .app .text p:first-child {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .main .container .app .text {
+    max-width: 100%;
+  }
+}
+.main .container .app .from .free_days {
+  background-color: #5d54a3;
+  color: #ffffff;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 8px 0px 0px rgba(111, 111, 111, 0.5);
+}
+.main .container .app .from .free_days p {
+  font-size: 14px;
+  font-weight: 700;
+}
+.main .container .app .from .free_days p span {
+  opacity: 0.9;
+  font-weight: 400;
+}
+.main .container .app .from .card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(111, 111, 111, 0.5);
+}
+.main .container .app .from .card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+.main .container .app .from .card form input {
+  position: relative;
+  padding: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #787887;
+}
+.main .container .app .from .card form button {
+  background-color: #37cc8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main .container .app .from .card form button:focus {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.main .container .app .from .card form .error {
+  border: 2px solid #ff7978 !important;
+  background: url(../images/icon-error.svg) no-repeat;
+  background-position: 95% 50%;
+}
+.main .container .app .from .card form .error-text {
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #ff7978;
+}
+.main .container .app .from .card form .success {
+  border: 2px solid #37cc8a !important;
+}
+.main .container .app .from .card form .success-text {
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #37cc8a;
+}
+.main .container .app .from .card form .success-text::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 700;
+  padding: 0 6px;
+}
+.main .container .app .from .card .by {
+  margin: 20px 15px 0;
+  color: #787887;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main .container .app .from .card .by b {
+  color: #ff7978;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .main .container .app {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.main .container .attribution {
+  position: absolute;
+  bottom: 0rem;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+.main .container .attribution a {
+  font-size: smaller;
+  text-decoration: none;
+  color: #5d54a3;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.main .container .attribution a:hover::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f0a9";
+  font-size: 14px;
+  padding: 0 8px;
+}
+@media (max-width: 768px) {
+  .main .container .attribution {
+    bottom: -4rem;
+  }
+}
+@media (max-width: 400px) {
+  .main .container .attribution {
+    bottom: -10rem;
+  }
+}
+@media (max-width: 400px) {
+  .main .container {
+    height: 120vh;
+  }
+}
+
+/*! end code *//*# sourceMappingURL=style.css.map */
