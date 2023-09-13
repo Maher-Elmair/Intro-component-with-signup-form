@@ -279,7 +279,7 @@ body {
 }
 @media (max-width: 480px) {
   .main .container {
-    height: auto;
+    height: initial;
     gap: 20px;
   }
 }

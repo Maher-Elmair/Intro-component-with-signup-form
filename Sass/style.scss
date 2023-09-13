@@ -226,7 +226,7 @@ body {
     }
     /*! end Attribution */
     @include media("<=480px") {
-      height: auto;
+      height: initial;
       gap: 20px;
     }
   }
