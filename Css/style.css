@@ -238,6 +238,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    margin: 120px auto;
   }
 }
 .main .container .attribution {
@@ -271,14 +272,15 @@ body {
     bottom: -4rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .main .container .attribution {
     position: initial;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .main .container {
-    height: 120vh;
+    height: auto;
+    gap: 20px;
   }
 }
 

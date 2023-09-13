@@ -72,6 +72,7 @@ body {
         }
         @include media("<=tablet") {
           text-align: center;
+
           p:first-child {
             font-size: 30px;
           }
@@ -187,6 +188,7 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 40px;
+        margin: 120px auto;
       }
     }
     /*! start Attribution */
@@ -218,13 +220,14 @@ body {
       @include media("<=tablet") {
         bottom: -4rem;
       }
-      @include media("<=400px") {
+      @include media("<=480px") {
         position: initial;
       }
     }
     /*! end Attribution */
-    @include media("<=400px") {
-      height: 120vh;
+    @include media("<=480px") {
+      height: auto;
+      gap: 20px;
     }
   }
 }
